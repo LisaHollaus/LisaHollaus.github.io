@@ -1,3 +1,3 @@
 # My Portfolio repository
 
-Accessible on [LisaHollaus.github.io](https://lisahollaus.github.io/)
+Preview on [LisaHollaus.github.io](https://lisahollaus.github.io/)
