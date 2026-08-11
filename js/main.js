@@ -288,3 +288,39 @@
 	});		
 
 })(jQuery);
+
+/*---------------------------------------------------- */
+/* Scroll reveal for portfolio project cards
+   Uses IntersectionObserver to add `is-revealed` class
+*/
+(function() {
+	'use strict';
+
+	function initReveal() {
+		var cards = document.querySelectorAll('#portfolio .project-card');
+		if (!cards || cards.length === 0) return;
+
+		if ('IntersectionObserver' in window) {
+			var io = new IntersectionObserver(function(entries, observer) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('is-revealed');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, { root: null, rootMargin: '0px', threshold: 0.12 });
+
+			cards.forEach(function(card) { io.observe(card); });
+		} else {
+			// Fallback for older browsers: reveal all
+			cards.forEach(function(card) { card.classList.add('is-revealed'); });
+		}
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initReveal);
+	} else {
+		initReveal();
+	}
+
+})();
