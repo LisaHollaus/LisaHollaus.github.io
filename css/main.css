@@ -82,7 +82,7 @@ body {
  * -------------------------------------------------------------------
  */
 a, a:visited {
-	color: #000000;
+	color: #6e6e6e;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1102,7 +1102,7 @@ header .top-bar {
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 0;
 	top: 0;
 	display: flex;
     align-items: center;

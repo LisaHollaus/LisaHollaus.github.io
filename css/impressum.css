@@ -1,0 +1,118 @@
+body.impressum-page {
+   background: #151515;
+}
+
+.impressum-page main {
+   min-height: calc(100vh - 12rem);
+   padding: 14rem 0 8rem;
+}
+
+.impressum-page .impressum-content {
+   background: #ffffff;
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 6rem;
+}
+
+.impressum-page .impressum-toolbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 2rem;
+   margin-bottom: 3rem;
+}
+
+.impressum-page .back-link {
+   display: inline-block;
+}
+
+.impressum-page .language-toggle {
+   display: inline-flex;
+}
+
+.impressum-page .language-button {
+   border: 0;
+   background: #ffffff;
+   color: #313131;
+   font-family: "poppins-bold", sans-serif;
+   font-size: 1.2rem;
+   line-height: 1;
+   letter-spacing: .08rem;
+   padding: 1.2rem 1.4rem;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.impressum-page .language-button:last-child {
+   border-right: 0;
+}
+
+.impressum-page .language-button.active {
+   background: #313131;
+   color: #ffffff;
+}
+
+.impressum-page .impressum-content h1 {
+   margin-bottom: 3rem;
+}
+
+.impressum-page .impressum-content h2 {
+   margin-top: 4rem;
+}
+
+.impressum-page .impressum-content p {
+   color: #6e6e6e;
+}
+
+.impressum-page .impressum-content a {
+   color: #FF0077;
+}
+
+.impressum-page .impressum-content a:hover,
+.impressum-page .impressum-content a:focus {
+   color: #313131;
+}
+
+.impressum-page .generator-source {
+   margin-top: 3rem;
+   font-size: 1.4rem;
+}
+
+.impressum-page .privacy-section {
+   margin-top: 6rem;
+   padding-top: 4rem;
+   border-top: 1px solid #e6e6e6;
+}
+
+.impressum-page .privacy-section h1 {
+   margin-bottom: 3rem;
+}
+
+.impressum-page .privacy-section h2 {
+   margin-top: 3.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.impressum-page .impressum-content ul {
+   margin: 0 0 3rem 2rem;
+   color: #6e6e6e;
+}
+
+.impressum-page .impressum-content li {
+   margin-bottom: .8rem;
+}
+
+@media only screen and (max-width:768px) {
+   .impressum-page main {
+      padding: 10rem 2rem 5rem;
+   }
+
+   .impressum-page .impressum-content {
+      padding: 4rem 3rem;
+   }
+
+   .impressum-page .impressum-toolbar {
+      align-items: flex-start;
+      flex-direction: column;
+   }
+}
