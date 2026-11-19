@@ -2444,16 +2444,16 @@ header .logo a {
 .oldie #submit-loader .text-loader {
 	display: block;
 }
-.contact-info {
+#contact .contact-info {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1.5rem;
 	margin: 2rem auto 0;
 	width: calc(100% - 3rem);
-	max-width: 46rem;
+	max-width: 40rem;
 	box-sizing: border-box;
-	padding: 1.6rem 2rem;
+	padding: 1.3rem 1.6rem;
 	border: 1px solid #FFFFFF;
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
