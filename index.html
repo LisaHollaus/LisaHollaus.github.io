@@ -249,7 +249,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
-				<div class="timeline-block">
+				<div class="timeline-block work-preview">
 
 	   				<div class="timeline-ico">
 	   					<i class="fa fa-briefcase"></i>
@@ -267,6 +267,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
+				<div id="work-experience-extra" class="work-extra">
 
 	   			<div class="timeline-block">
 
@@ -332,7 +333,15 @@
 
 				</div> <!-- /timeline-block -->
 
-   			</div> <!-- /timeline-wrap -->   			
+				</div> <!-- /work-experience-extra -->
+
+   			</div> <!-- /timeline-wrap -->
+
+   			<div class="work-experience-toggle">
+   				<button type="button" id="work-experience-toggle" aria-label="Show more experience" aria-expanded="false" aria-controls="work-experience-extra">
+   					<span aria-hidden="true"></span>
+   				</button>
+   			</div>
 
    		</div> <!-- /col-twelve -->
    		
@@ -398,6 +407,24 @@
 
 	   			</div> <!-- /timeline-block -->
 
+					<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Apprenticeship</h3>
+	   					<p>09/2016 - 11/2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Bakery Florian Hink (Wilhelmsburg, Austria)</h4>
+	   					<p>Confectioner</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
 	   			<div class="timeline-block">
 
 	   				<div class="timeline-ico">
@@ -419,6 +446,7 @@
 
 	   			</div> <!-- /timeline-block -->
 
+	   	
    			</div> <!-- /timeline-wrap -->   			
 
    		</div> <!-- /col-twelve -->
@@ -437,7 +465,7 @@
 			<div class="col-twelve">
 				
 				<h5>Portfolio</h5>
-				<h1 style="color: black;">
+				<h1 style="color: rgb(255, 255, 255);">
 					Academic & Personal Projects
 				</h1>
 
@@ -445,7 +473,7 @@
 					A collection of university projects and personal work involving 
 					machine learning, bioinformatics, web development, databases, and UX research.
 					<br>
-					<h3 style="color: black;"> More projects are available on my 
+					<h3 style="color: rgb(255, 255, 255);"> More projects are available on my 
 					<a href="https://github.com/LisaHollaus" target="_blank">>> GitHub <<</a>. </h3>
 				</p>
 
@@ -459,8 +487,11 @@
   		<div class="col-six tab-full">
         <div class="project-card">
 
-            <img src="images/portfolio/gsva_heatmap.png" 
-                 alt="Gene Set Variation Analysis">
+            <a class="project-image-link" href="#modal-gsva"
+               aria-label="Open enlarged view of Gene Set Variation Analysis">
+                <img src="images/portfolio/gsva_heatmap.png"
+                     alt="Gene Set Variation Analysis">
+            </a>
 
             <h3>🧬 Gene Set Variation Analysis</h3>
 
@@ -484,8 +515,11 @@
     <div class="col-six tab-full">
         <div class="project-card">
 		
-			<img src="images/portfolio/big_data_barplot_k3.png" 
-                 alt="ECG Clustering Results">
+			<a class="project-image-link" href="#modal-ecg"
+			   aria-label="Open enlarged view of ECG clustering results">
+                <img src="images/portfolio/big_data_barplot_k3.png"
+                     alt="ECG Clustering Results">
+            </a>
 
             <h3>❤️ ECG Arrhythmia Exploratory Data Analysis</h3>
 
@@ -511,9 +545,11 @@
     <div class="col-six tab-full">
         <div class="project-card">
 
-            <img src="images/portfolio/flood-platform.png" 
-                 alt="Flood Information Platform">
-                 <!-- class="project-image"> -->
+            <a class="project-image-link" href="#modal-flood"
+               aria-label="Open enlarged view of Flood Information Platform">
+                <img src="images/portfolio/flood-platform.png"
+                     alt="Flood Information Platform">
+            </a>
 
             <h3>🌊 Flood Information Platform</h3>
 
@@ -718,6 +754,46 @@
 				   <-- modal popups - end
 	            =============================================================
  				ending of optional part -->
+
+    <!-- Enlarged portfolio images -->
+    <div id="modal-gsva" class="popup-modal project-popup mfp-hide">
+        <div class="media">
+            <img src="images/portfolio/gsva_heatmap.png" alt="Gene Set Variation Analysis" />
+        </div>
+        <div class="description-box">
+            <h4>Gene Set Variation Analysis</h4>
+            <div class="categories">Bioinformatics Project</div>
+        </div>
+        <div class="link-box">
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
+
+    <div id="modal-ecg" class="popup-modal project-popup mfp-hide">
+        <div class="media">
+            <img src="images/portfolio/big_data_barplot_k3.png" alt="ECG Clustering Results" />
+        </div>
+        <div class="description-box">
+            <h4>ECG Arrhythmia Exploratory Data Analysis</h4>
+            <div class="categories">Big Data Project</div>
+        </div>
+        <div class="link-box">
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
+
+    <div id="modal-flood" class="popup-modal project-popup mfp-hide">
+        <div class="media">
+            <img src="images/portfolio/flood-platform.png" alt="Flood Information Platform" />
+        </div>
+        <div class="description-box">
+            <h4>Flood Information Platform</h4>
+            <div class="categories">Scrum Web Development Project</div>
+        </div>
+        <div class="link-box">
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>
+    </div>
 
 	</section> <!-- /portfolio --> 
 
@@ -992,15 +1068,16 @@
    	</div> <-- /contact-form -->
 		
    	<div class="row contact-info">
+   			<a class="contact-email-link" href="mailto:lisa.hollaus@live.at" aria-label="Email Lisa-Maria Hollaus">
+   				<div class="icon">
+   					<i class="icon-mail"></i>
+   				</div>
 
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
-
-   			<div class="contact-details">
-   				<h5>Email Me At</h5>
-   				<p><a href="mailto:lisa.hollaus@live.at">lisa.hollaus@live.at</a></p>
-   			</div>
+   				<div class="contact-details">
+   					<h5>Email Me At</h5>
+   					<p>lisa.hollaus@live.at</p>
+   				</div>
+   			</a>
 			
 
    		<!-- <div class="col-four tab-full">

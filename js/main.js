@@ -127,6 +127,16 @@
 
    });
 
+   $('.project-image-link').magnificPopup({
+
+      type:'inline',
+      fixedContentPos: false,
+      removalDelay: 300,
+      showCloseBtn: true,
+      mainClass: 'mfp-fade'
+
+   });
+
    $(document).on('click', '.popup-modal-dismiss', function (e) {
    	e.preventDefault();
    	$.magnificPopup.close();
@@ -323,4 +333,27 @@
 		initReveal();
 	}
 
+})();
+
+(function() {
+	'use strict';
+
+	function initWorkExperienceToggle() {
+		var resume = document.querySelector('#resume');
+		var toggle = document.getElementById('work-experience-toggle');
+		var extra = document.getElementById('work-experience-extra');
+		if (!resume || !toggle || !extra) return;
+
+		toggle.addEventListener('click', function() {
+			var expanded = resume.classList.toggle('work-experience-expanded');
+			toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+			toggle.setAttribute('aria-label', expanded ? 'Show less experience' : 'Show more experience');
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initWorkExperienceToggle);
+	} else {
+		initWorkExperienceToggle();
+	}
 })();
