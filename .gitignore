@@ -1,0 +1,6 @@
+# Impeccable generated reports and local hook state
+.impeccable/critique/
+.impeccable/live/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/hook.pending.json
