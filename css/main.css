@@ -944,20 +944,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	letter-spacing: .12rem;
 }
 .skill-tags li {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	margin: 0;
-	padding: .4rem 1rem;
-	border: 1px solid #313131;
+	max-width: 100%;
+	padding: .55rem .95rem;
+	border: 1px solid #f0bfd2;
 	border-radius: 999px;
-	background: #313131;
-	color: #FFFFFF;
-	font-family: "poppins-bold", sans-serif;
-	font-size: 1.1rem;
-	letter-spacing: .06rem;
-	line-height: 1.6;
-	text-transform: uppercase;
-	transition: all .3s ease-in-out;
+	background: #fff3f8;
+	color: #313131;
+	font-family: "poppins-medium", sans-serif;
+	font-size: 1.2rem;
+	letter-spacing: 0;
+	line-height: 1.4;
 }
+
 
 
 /**
@@ -1059,10 +1060,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: "poppins-semibold", serif;
-	font-size: 3.6rem;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 4.5rem;
 	color: #313131;
-	line-height: 1.25;
+	line-height: 1;
+	letter-spacing: -.02em;
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
@@ -1083,12 +1085,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 		max-width: 650px;
 	}
 	.section-intro h1 {
-		font-size: 3rem;
+		font-size: 3.8rem;
 	}
 }
 @media only screen and (max-width:600px) {
 	.section-intro h1 {
-		font-size: 2.6rem;
+		font-size: 3.4rem;
 	}
 	.section-intro h5 {
 		font-size: 1.5rem;
@@ -1097,7 +1099,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 @media only screen and (max-width:400px) {
 	.section-intro h1 {
-		font-size: 2.4rem;
+		font-size: 3.2rem;
 	}
 }
 
@@ -1555,9 +1557,9 @@ header .logo a {
 }
 .about-content h2 {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
+	font-size: 2.1rem;
 	text-transform: uppercase;
-	letter-spacing: .25rem;
+	letter-spacing: .15rem;
 }
 .about-content .info-list {
 	list-style: none;
@@ -1662,6 +1664,10 @@ header .logo a {
 }
 #resume .resume-header h2 {
 	color: #FF0077;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 4.8rem;
+	line-height: 1.1;
+	letter-spacing: -.03em;
 }
 
 #resume .resume-timeline {
@@ -1681,9 +1687,9 @@ header .logo a {
 #resume .timeline-wrap::before {
 	content: "";
 	display: block;
-	width: 1px;
+	width: 2px;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(204, 0, 95, 0.35);
 	position: absolute;
 	left: 35%;
 	top: 0;
@@ -1701,7 +1707,7 @@ header .logo a {
 	height: 4.8rem;
 	width: 4.8rem;
 	line-height: 4.8rem;
-	background: #313131;
+	background: #FF0077;
 	border-radius: 50%;
 	text-align: center;
 	color: #FFFFFF;
@@ -1723,6 +1729,8 @@ header .logo a {
 	text-align: right;
 }
 #resume .timeline-header h3 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 2rem;
 	margin-bottom: 0;
 }
 #resume .timeline-header p,
@@ -1732,12 +1740,18 @@ header .logo a {
 	color: #888888;
 	margin-bottom: 1.5rem;
 }
+#resume .timeline-header p {
+	color: #cc005f;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 1.4rem;
+}
 #resume .timeline-content {
 	margin-left: 35%;
 	padding-left: 60px;
 	margin-bottom: 0;
 }
 #resume .timeline-content h4 {
+	font-size: 2rem;
 	margin-bottom: .6rem;
 }
 
@@ -1835,7 +1849,7 @@ header .logo a {
 		font-size: 1.8rem;
 	}
 	#resume .timeline-header p {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 	}
 	#resume .timeline-content {
 		padding-left: 50px;
@@ -1868,7 +1882,7 @@ header .logo a {
 		padding-bottom: 0;
 		padding-top: 2.1rem;
 		margin-bottom: .6rem;
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 	}
 	#resume .timeline-content h4::after {
 		bottom: auto;
@@ -2219,6 +2233,7 @@ header .logo a {
 }
 #contact .section-intro h1 {
 	color: white;
+	font-size: 4rem;
 }
 #contact .section-intro h5 {
 	color: #FF0077;
@@ -2399,6 +2414,39 @@ header .logo a {
 	color: rgba(255, 255, 255, 0.8);
 }
 
+#contact .contact-info {
+	width: 48rem;
+	max-width: calc(100% - 3rem);
+	padding: 0;
+	border: 0;
+	margin-left: 110px;
+	margin-top: 0;
+}
+#contact .contact-info .contact-email-link {
+	box-sizing: border-box;
+	padding: 1.5rem 2rem;
+	background: #FF0077;
+	color: #151515;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+#contact .contact-info .contact-email-link h2,
+#contact .contact-info .contact-email-link p,
+#contact .contact-info .contact-email-link .icon i {
+	color: inherit;
+}
+#contact .contact-info .contact-email-link:hover,
+#contact .contact-info .contact-email-link:focus-visible {
+	background: #ff4c9a;
+	transform: translateY(-2px);
+}
+#contact .contact-info .contact-email-link:active {
+	background: #ff8fbd;
+	transform: translateY(0);
+}
+#contact .contact-info .contact-email-link:focus-visible {
+	outline: 3px solid #FFFFFF;
+	outline-offset: 3px;
+}
 
 /** 
  * ===================================================================
@@ -2527,10 +2575,12 @@ footer .copyright span:last-child::after {
 #portfolio .project-group-title {
 	box-sizing: border-box;
 	color: #FFFFFF;
-	font-size: 2.4rem;
-	line-height: 1.3;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 3.2rem;
+	line-height: 1.1;
+	letter-spacing: -.03em;
 	max-width: 1000px;
-	margin: 3.6rem auto 2rem;
+	margin: 3.6rem 20rem 2rem;
 	padding: 0 2rem;
 }
 #portfolio .section-intro .lead,
@@ -2596,6 +2646,9 @@ footer .copyright span:last-child::after {
 }
 
 .project-card h3 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 2.4rem;
+	line-height: 1.25;
     margin-bottom: 10px;
 }
 
