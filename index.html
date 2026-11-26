@@ -10,8 +10,8 @@
    <meta charset="utf-8">
 
 
-	<title>Lisa-Maria Hollaus | Informatics Graduate &amp; Freelancer</title>
-	<meta name="description" content="B.Sc. Informatics graduate (Data Science) and freelancer from Austria. Portfolio with projects in Python, R, SQL and web development, from bioinformatics to flood information platforms.">
+	<title data-i18n="pageTitle">Lisa-Maria Hollaus | Informatics Graduate &amp; Freelancer</title>
+	<meta name="description" content="B.Sc. Informatics graduate (Data Science) and freelancer from Austria. Portfolio with projects in Python, R, SQL and web development, from bioinformatics to flood information platforms." data-i18n-content="metaDescription">
 	<meta name="author" content="Lisa-Maria Hollaus">
 
 	<link rel="canonical" href="https://lisahollaus.github.io/">
@@ -19,10 +19,10 @@
 	<!-- Open Graph (LinkedIn, WhatsApp, Slack, ...) -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://lisahollaus.github.io/">
-	<meta property="og:title" content="Lisa-Maria Hollaus | Informatics Graduate &amp; Freelancer">
-	<meta property="og:description" content="B.Sc. Informatics graduate (Data Science) and freelancer from Austria. Projects in Python, R, SQL and web development.">
+	<meta property="og:title" content="Lisa-Maria Hollaus | Informatics Graduate &amp; Freelancer" data-i18n-content="pageTitle">
+	<meta property="og:description" content="B.Sc. Informatics graduate (Data Science) and freelancer from Austria. Projects in Python, R, SQL and web development." data-i18n-content="ogDescription">
 	<meta property="og:image" content="https://lisahollaus.github.io/images/profile-pic.jpg">
-	<meta property="og:image:alt" content="Profile picture of Lisa-Maria Hollaus">
+	<meta property="og:image:alt" content="Profile picture of Lisa-Maria Hollaus" data-i18n-content="profileImageAlt">
 
 	<!-- mobile specific metas
 	================================================== -->
@@ -54,21 +54,23 @@
    	<div class="row">
 
    		<div class="top-bar">
-   			<button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav-wrap"><span>Menu</span></button>
+			<button class="menu-toggle" type="button" aria-label="Open navigation" data-i18n-aria-label="navOpen" aria-expanded="false" aria-controls="main-nav-wrap"><span data-i18n="menu">Menu</span></button>
 
 	   		<div class="logo">
 		         <a href="index.html">
-					<img src="images/logo.png" alt="Logo" style="width: 200px; height: auto;">
+					<img src="images/logo.png" alt="Logo" data-i18n-alt="logoAlt" style="width: 200px; height: auto;">
 				 </a>
 		      </div>		      
 
+				<button id="language-toggle" class="language-toggle" type="button" aria-label="Switch website to German">DE</button>
+
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Experience</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>			
+						<li class="current"><a class="smoothscroll" href="#intro" title="" data-i18n="navHome">Home</a></li>
+						<li><a class="smoothscroll" href="#about" title="" data-i18n="navAbout">About</a></li>
+						<li><a class="smoothscroll" href="#resume" title="" data-i18n="navExperience">Experience</a></li>
+						<li><a class="smoothscroll" href="#portfolio" title="" data-i18n="navPortfolio">Portfolio</a></li>
+						<li><a class="smoothscroll" href="#contact" title="" data-i18n="navContact">Contact</a></li>
 					</ul>
 				</nav>    		
    		</div> <!-- /top-bar --> 
@@ -87,16 +89,16 @@
 
    			<div class="col-twelve">
 
-	   			<h5>Hello, World.</h5>
-	   			<h1>I'm Lisa-Maria Hollaus.</h1>
+				<h5 data-i18n="heroGreeting">Hello, World.</h5>
+				<h1 data-i18n="heroName">I'm Lisa-Maria Hollaus.</h1>
 
 	   			<p class="intro-position">
-	   				<span>B.Sc. Informatics Graduate</span>
-	   				<span>Freelancer</span> 
-					<span>Confectioner</span>
+					<span data-i18n="heroRoleGraduate">B.Sc. Informatics Graduate</span>
+					<span data-i18n="heroRoleFreelancer">Freelancer</span>
+					<span data-i18n="heroRoleConfectioner">Confectioner</span>
 	   			</p>
 
-            <a class="button stroke smoothscroll" href="#portfolio">Explore my projects</a>
+	    <a class="button stroke smoothscroll" href="#portfolio" data-i18n="heroCta">Explore my projects</a>
 
 	   		</div>  
    			
@@ -120,13 +122,13 @@
    	<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h1>Let me introduce myself.</h1>
+			<h1 data-i18n="aboutHeading">Let me introduce myself.</h1>
 
    			<div class="intro-info">
 
-   				<img src="images/profile-pic.jpg" alt="Profile Picture" style="width: 100px; height: auto;">
+				<img src="images/profile-pic.jpg" alt="Profile Picture" data-i18n-alt="profileImageAlt" style="width: 100px; height: auto;">
 
-   				<p class="lead">
+				<p class="lead" data-i18n="aboutLead">
 					From an organic farm to confectionery and solo travel, I've always learned by doing. Now I'm focused on data science, software development, and AI-related work.
 				</p>
    			</div>   			
@@ -138,70 +140,70 @@
 
         <div class="col-five tab-full">
 
-            <h2>Profile</h2>
-            <p>I graduated in 2026 with a B.Sc. in Informatics, specialising in Data Science, at IMC University of Applied Sciences Krems. Before tech, I trained as a confectioner, worked in agriculture and an office, and spent 1.5 years travelling through Europe and the Americas. That path taught me to adapt quickly and work independently.</p>
+	    <h2 data-i18n="profileHeading">Profile</h2>
+	    <p data-i18n="profileBody">I graduated in 2026 with a B.Sc. in Informatics, specialising in Data Science, at IMC University of Applied Sciences Krems. Before tech, I trained as a confectioner, worked in agriculture and an office, and spent 1.5 years travelling through Europe and the Americas. That path taught me to adapt quickly and work independently.</p>
 
-            <h2>Focus Areas</h2>
-            <p>Data science, bioinformatics, web development, databases, and UX research.</p>
+	    <h2 data-i18n="focusHeading">Focus Areas</h2>
+	    <p data-i18n="focusBody">Data science, bioinformatics, web development, databases, and UX research.</p>
 
    		</div>
             <div class="col-seven tab-full">
 				<div class="skill-categories">
 					<div class="skill-category">
-						<h3>Languages</h3>
+						<h3 data-i18n="skillLanguages">Languages</h3>
 						<ul class="skill-tags">
-							<li>Python</li>
-							<li>R</li>
-							<li>C</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
+							<li data-i18n="skillPython">Python</li>
+							<li data-i18n="skillR">R</li>
+							<li data-i18n="skillC">C</li>
+							<li data-i18n="skillHtml">HTML</li>
+							<li data-i18n="skillCss">CSS</li>
+							<li data-i18n="skillJavaScript">JavaScript</li>
 						</ul>
 					</div>
 
 					<div class="skill-category">
-						<h3>Data &amp; ML</h3>
+						<h3 data-i18n="skillDataMl">Data &amp; ML</h3>
 						<ul class="skill-tags">
-							<li>Data Analysis</li>
-							<li>Data Preprocessing</li>
-							<li>Data Visualization</li>
-							<li>Supervised Learning</li>
-							<li>Unsupervised Learning</li>
-							<li>Model Evaluation/Interpretation</li>
-							<li>Biological Data Analysis</li>
-							<li>Sequence Data Handling</li>
-							<li>Biological Interpretation</li>
+							<li data-i18n="skillDataAnalysis">Data Analysis</li>
+							<li data-i18n="skillDataPreprocessing">Data Preprocessing</li>
+							<li data-i18n="skillDataVisualization">Data Visualization</li>
+							<li data-i18n="skillSupervisedLearning">Supervised Learning</li>
+							<li data-i18n="skillUnsupervisedLearning">Unsupervised Learning</li>
+							<li data-i18n="skillModelEvaluation">Model Evaluation/Interpretation</li>
+							<li data-i18n="skillBiologicalDataAnalysis">Biological Data Analysis</li>
+							<li data-i18n="skillSequenceDataHandling">Sequence Data Handling</li>
+							<li data-i18n="skillBiologicalInterpretation">Biological Interpretation</li>
 						</ul>
 					</div>
 
 					<div class="skill-category">
-						<h3>Web &amp; Databases</h3>
+						<h3 data-i18n="skillWebDatabases">Web &amp; Databases</h3>
 						<ul class="skill-tags">
-							<li>Django</li>
-							<li>Flask</li>
-							<li>Node.js</li>
-							<li>REST APIs</li>
-							<li>gRPC</li>
-							<li>Socket Programming</li>
-							<li>SQLAlchemy</li>
-							<li>MariaDB</li>
-							<li>Neo4j</li>
+							<li data-i18n="skillDjango">Django</li>
+							<li data-i18n="skillFlask">Flask</li>
+							<li data-i18n="skillNode">Node.js</li>
+							<li data-i18n="skillRest">REST APIs</li>
+							<li data-i18n="skillGrpc">gRPC</li>
+							<li data-i18n="skillSocketProgramming">Socket Programming</li>
+							<li data-i18n="skillSqlalchemy">SQLAlchemy</li>
+							<li data-i18n="skillMariadb">MariaDB</li>
+							<li data-i18n="skillNeo4j">Neo4j</li>
 						</ul>
 					</div>
 
 					<div class="skill-category">
-						<h3>Tools &amp; Methods</h3>
+						<h3 data-i18n="skillToolsMethods">Tools &amp; Methods</h3>
 						<ul class="skill-tags">
-							<li>Git</li>
-							<li>Docker</li>
-							<li>PostHog</li>
-							<li>Jira</li>
-							<li>Scrum</li>
-							<li>UX Research</li>
-							<li>Usability Testing</li>
-							<li>Sequence Analysis</li>
-							<li>Image Analysis</li>
-							<li>Signal Analysis</li>
+							<li data-i18n="skillGit">Git</li>
+							<li data-i18n="skillDocker">Docker</li>
+							<li data-i18n="skillPosthog">PostHog</li>
+							<li data-i18n="skillJira">Jira</li>
+							<li data-i18n="skillScrum">Scrum</li>
+							<li data-i18n="skillUxResearch">UX Research</li>
+							<li data-i18n="skillUsabilityTesting">Usability Testing</li>
+							<li data-i18n="skillSequenceAnalysis">Sequence Analysis</li>
+							<li data-i18n="skillImageAnalysis">Image Analysis</li>
+							<li data-i18n="skillSignalAnalysis">Signal Analysis</li>
 						</ul>
 					</div>
 				</div>
@@ -211,8 +213,10 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-            <a href="#contact" class="button stroke smoothscroll">Hire me</a>
-            <a href="docs/CV-2026_en.pdf" class="button button-primary" download>Download CV (PDF)</a>
+	    <a href="#contact" class="button stroke smoothscroll" data-i18n="hireMe">Hire me</a>
+        <a href="docs/CV-2026_en.pdf" class="button button-primary cv-download-button" download data-language-href-en="docs/CV-2026_en.pdf" data-language-href-de="docs/CV-2026_de.pdf">
+            <i class="fa fa-download" aria-hidden="true"></i><span data-i18n="downloadCv">CV (PDF)</span>
+        </a>
    		</div>   		
    	</div>
 
@@ -227,7 +231,7 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Work Experience</h2>
+			<h2 data-i18n="workExperience">Work Experience</h2>
 
    		</div> <!-- /resume-header -->
 
@@ -242,14 +246,14 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Independent Projects</h3>
-							<p>10/2022 - Present<br>(project-based)</p>
+						<h3 data-i18n="independentProjects">Independent Projects</h3>
+							<p data-i18n="projectBasedDate" data-i18n-html>10/2022 - Present<br>(project-based)</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Upwork.com (Remote)</h4>
-							<p>
-								Small jobs in diverse fields, including search results correction, scripted speech recording and survey projects.
+						<h4 data-i18n="upworkRemote">Upwork.com (Remote)</h4>
+							<p data-i18n="independentProjectDescription">
+								Small jobs in diverse fields, including QA testing, search results correction, scripted speech recording and survey projects.
 							</p>
 	   				</div>
 
@@ -263,13 +267,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>AI Tools & Systems Associate</h3>
+						<h3 data-i18n="aiToolsAssociate">AI Tools &amp; Systems Associate</h3>
 	   					<p>08/2026 - 09/2026</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>Emsenhuber & Partner GmbH</h4>
-	   					<p>Coordinated digitalization projects, improved FINMATICS AI accuracy through error analysis and training, and supported AI adoption for meeting notes.</p>
+						<p data-i18n="aiToolsDescription">Coordinated digitalization projects, improved FINMATICS AI accuracy through error analysis and training, and supported AI adoption for meeting notes.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -281,13 +285,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Intern</h3>
+						<h3 data-i18n="intern">Intern</h3>
 	   					<p>09/2025 - 02/2026</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>StagePool (mostly Remote)</h4>
-	   					<p>Ran UX tests on the new website while it was in development and fed the findings back to the team, leading to concrete change, e.g. a simpler navigation or bug fixes. Researched and collected ideas for further website sections based on competitor analysis and user needs.						</p>
+						<h4 data-i18n="stagepoolRemote">StagePool (mostly Remote)</h4>
+						<p data-i18n="internDescription">Ran UX tests on the new website while it was in development and fed the findings back to the team, leading to concrete change, e.g. a simpler navigation or bug fixes. Researched and collected ideas for further website sections based on competitor analysis and user needs.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -299,13 +303,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Publishing Assistant</h3>
+						<h3 data-i18n="publishingAssistant">Publishing Assistant</h3>
 	   					<p>03/2025 - 06/2025</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>StagePool (Remote)</h4>
-	   					<p>Diverse tasks related to publishing Jobs, customers and content management.</p>
+						<h4 data-i18n="stagepoolRemoteShort">StagePool (Remote)</h4>
+						<p data-i18n="publishingDescription">Diverse tasks related to publishing Jobs, customers and content management.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -319,13 +323,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Agricultural worker</h3>
-	   					<p>09/2020 - 09/2023 (inconsistently)</p>
+						<h3 data-i18n="agriculturalWorker">Agricultural worker</h3>
+						<p data-i18n="agriculturalDates" data-i18n-html>09/2020 - 09/2023 (inconsistently)</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>At Home (Traisen, Austria) and in Iceland (Hegranes) over workaway.info</h4>
-	   					<p>Diverse work from animal care, to food and beverages production, to kitchenwork and service at the restaurant and basic household chores. </p>
+						<h4 data-i18n="farmLocation">At Home (Traisen, Austria) and in Iceland (Hegranes) over workaway.info</h4>
+						<p data-i18n="agriculturalDescription">Diverse work from animal care, to food and beverages production, to kitchenwork and service at the restaurant and basic household chores.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -337,16 +341,16 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Office Assistant</h3>
+						<h3 data-i18n="officeAssistant">Office Assistant</h3>
 	   					<p>03/2021 - 05/2021</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>
-							District Chamber of Farmers
-							(Lilienfeld, Austria)
+							<span data-i18n="districtChamber">District Chamber of Farmers</span>
+							<span data-i18n="lilienfeldAustria">(Lilienfeld, Austria)</span>
 						</h4>
-	   					<p>Assistance with funding applications, transferring data, digitization and reception services.</p>
+						<p data-i18n="officeDescription">Assistance with funding applications, transferring data, digitization and reception services.</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -358,16 +362,16 @@
 					</div>
 
 					<div class="timeline-header">
-						<h3>Confectioner</h3>
+						<h3 data-i18n="confectioner">Confectioner</h3>
 						<p>09/2016 - 09/2020</p>
 					</div>
 
 					<div class="timeline-content">
 						<h4>
-							Bakery Florian Hink
-							(Wilhelmsburg, Austria) 
+							<span data-i18n="bakeryName">Bakery Florian Hink</span>
+							<span data-i18n="wilhelmsburgAustria">(Wilhelmsburg, Austria)</span>
 						</h4>
-						<p>
+						<p data-i18n="confectionerDescription" data-i18n-html>
 							Employed in all fields of baking Austrian sweets, ice-cream production, decorating cakes and manufacturing pralines.
 							<br> 
 							Including two years of apprenticeship.
@@ -381,7 +385,7 @@
    			</div> <!-- /timeline-wrap -->
 
    			<div class="work-experience-toggle">
-   				<button type="button" id="work-experience-toggle" aria-label="Show more experience" aria-expanded="false" aria-controls="work-experience-extra">
+				<button type="button" id="work-experience-toggle" aria-label="Show more experience" data-i18n-aria-label="showMoreExperience" aria-expanded="false" aria-controls="work-experience-extra">
    					<span aria-hidden="true"></span>
    				</button>
    			</div>
@@ -395,7 +399,7 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Education</h2>
+			<h2 data-i18n="education">Education</h2>
 
    		</div> <!-- /resume-header -->
 
@@ -410,16 +414,16 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Bachelor Degree</h3>
+						<h3 data-i18n="bachelorDegree">Bachelor Degree</h3>
 	   					<p>09/2023 - 06/2026</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 	   					<h4>
-							IMC University of Applied Science <br>
-							Krems an der Donau (Austria)
+							<span data-i18n="imcUniversity">IMC University of Applied Science</span><br>
+							<span data-i18n="kremsAustria">Krems an der Donau (Austria)</span>
 						</h4>
-	   					<p>
+						<p data-i18n="informaticsDegree" data-i18n-html>
 							Informatics <br>
 							(Computer Science focused on Data Science)</p>
 	   				</div>
@@ -440,9 +444,9 @@
 	   				<div class="timeline-content">
 	   					<h4>
 							Berufsförderungsinstitut (BFI) <br>
-							(St. Pölten, Austria)
+							<span data-i18n="stPoeltenAustria">(St. Pölten, Austria)</span>
 						</h4>
-	   					<p>
+						<p data-i18n="berufsreifeDescription" data-i18n-html>
 							A-Level - general qualification for university entrance <br>
 							With a focus on health and social affairs
 						</p>
@@ -457,13 +461,13 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Apprenticeship</h3>
+						<h3 data-i18n="apprenticeship">Apprenticeship</h3>
 	   					<p>09/2016 - 11/2018</p>
 	   				</div>
 
 	   				<div class="timeline-content">
-	   					<h4>Bakery Florian Hink (Wilhelmsburg, Austria)</h4>
-	   					<p>Confectioner</p>
+						<h4 data-i18n="bakeryEducation">Bakery Florian Hink (Wilhelmsburg, Austria)</h4>
+						<p data-i18n="confectioner">Confectioner</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -482,9 +486,9 @@
 	   				<div class="timeline-content">
 	   					<h4>
 							Fachschule Sooß
-							(Austria)
+							<span data-i18n="schoolAustria">(Austria)</span>
 						</h4>
-	   					<p>Graduating as skilled worker for agriculture- and household-management</p>
+						<p data-i18n="schoolQualification">Graduating as skilled worker for agriculture- and household-management</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -507,43 +511,43 @@
 		<div class="row section-intro">
 			<div class="col-twelve">
 				
-				<h1 style="color: rgb(255, 255, 255);">Selected projects</h1>
+				<h1 style="color: rgb(255, 255, 255);" data-i18n="selectedProjects">Selected projects</h1>
 
-				<p class="lead">
+				<p class="lead" data-i18n="portfolioIntro">
 					University and personal work across data science, bioinformatics, web development, databases, and UX research.
 				</p>
-				<p><a href="https://github.com/LisaHollaus" target="_blank" rel="noopener">Browse more projects on GitHub &rarr;</a></p>
+				<p><a href="https://github.com/LisaHollaus" target="_blank" rel="noopener" data-i18n="browseGithub">Browse more projects on GitHub &rarr;</a></p>
 
 			</div>   		
    		</div> 
 		
 	<!-- portfolio content --> 
 
-	<h2 class="project-group-title">Featured projects</h2>
+	<h2 class="project-group-title" data-i18n="featuredProjects">Featured projects</h2>
 	<div class="row portfolio-content">
 
   		<div class="col-six tab-full">
         <div class="project-card">
 
             <a class="project-image-link" href="#modal-gsva"
-               aria-label="Open enlarged view of Gene Set Variation Analysis">
+	       aria-label="Open enlarged view of Gene Set Variation Analysis" data-i18n-aria-label="openGsvaImage">
                 <img src="images/portfolio/gsva_heatmap.png"
-                     alt="Gene Set Variation Analysis">
+		     alt="Gene Set Variation Analysis" data-i18n-alt="gsvaImageAlt">
             </a>
 
-            <h3>Gene Set Variation Analysis</h3>
+	    <h3 data-i18n="gsvaTitle">Gene Set Variation Analysis</h3>
 
-            <p class="project-type">
+	    <p class="project-type" data-i18n="bioinformaticsProject">
                 Bioinformatics Project
             </p>
 
-            <p>
+	    <p data-i18n="gsvaDescription">
                 Applied gene set variation analysis to tumor gene-expression data, then used clustering to identify patterns.
             </p>
 
             <p>
-                <strong style="color: #000000;">Tools &amp; methods:</strong><br>
-                R · Bioinformatics · Data Analysis · GSVA · Clustering
+		<strong style="color: #000000;" data-i18n="toolsMethods">Tools &amp; methods:</strong><br>
+		<span data-i18n="gsvaTools">R · Bioinformatics · Data Analysis · GSVA · Clustering</span>
             </p>
         </div>
     </div>
@@ -553,24 +557,24 @@
         <div class="project-card">
 		
 			<a class="project-image-link" href="#modal-ecg"
-			   aria-label="Open enlarged view of ECG clustering results">
+			   aria-label="Open enlarged view of ECG clustering results" data-i18n-aria-label="openEcgImage">
                 <img src="images/portfolio/big_data_barplot_k3.png"
-                     alt="ECG Clustering Results">
+		     alt="ECG Clustering Results" data-i18n-alt="ecgImageAlt">
             </a>
 
-            <h3>ECG Arrhythmia Exploratory Data Analysis</h3>
+	    <h3 data-i18n="ecgTitle">ECG Arrhythmia Exploratory Data Analysis</h3>
 
-            <p class="project-type">
+	    <p class="project-type" data-i18n="bigDataProject">
                 Big Data Project
             </p>
 
-            <p>
+	    <p data-i18n="ecgDescription">
                 Built neural-network classifiers and used clustering to analyze ECG data and evaluate model performance.
             </p>
 
             <p>
-                <strong style="color: #000000;">Tools &amp; methods:</strong><br>
-                Python · Wavelet Transform · Feature Engineering ·  Neural Networks · k-means
+		<strong style="color: #000000;" data-i18n="toolsMethods">Tools &amp; methods:</strong><br>
+		<span data-i18n="ecgTools">Python · Wavelet Transform · Feature Engineering · Neural Networks · k-means</span>
             </p>
 
         </div>
@@ -581,57 +585,57 @@
         <div class="project-card">
 
             <a class="project-image-link" href="#modal-flood"
-               aria-label="Open enlarged view of Flood Information Platform">
+	       aria-label="Open enlarged view of Flood Information Platform" data-i18n-aria-label="openFloodImage">
                 <img src="images/portfolio/flood-platform.png"
-                     alt="Flood Information Platform">
+		    alt="Flood Information Platform" data-i18n-alt="floodImageAlt">
             </a>
 
-            <h3>Flood Information Platform</h3>
+	    <h3 data-i18n="floodTitle">Flood Information Platform</h3>
 
-            <p class="project-type">
+	    <p class="project-type" data-i18n="scrumWebProject">
                 Scrum Web Development Project
             </p>
 
-            <p>
+	    <p data-i18n="floodDescription">
                 Developed a Django web application for managing flood information, with historical and real-time data.
             </p>
 
             <p>
-                <strong style="color: #000000;">Tools &amp; methods:</strong><br>
-                Python · Django · Web Development · Scrum
+	       <strong style="color: #000000;" data-i18n="toolsMethods">Tools &amp; methods:</strong><br>
+		<span data-i18n="floodTools">Python · Django · Web Development · Scrum</span>
             </p>
 
             <a href="https://github.com/Christian-Hummel/IMC-AFS-Group1" target="_blank" rel="noopener">
-                View source code on GitHub &rarr;
+		<span data-i18n="viewGithub">View source code on GitHub &rarr;</span>
             </a>
 
         </div>
     </div>
 
 	</div>
-	<h2 class="project-group-title">More projects</h2>
+	<h2 class="project-group-title" data-i18n="moreProjects">More projects</h2>
 	<div class="row portfolio-content">
 
     <div class="col-six tab-full">
         <div class="project-card">
 
-            <h3>Train Ticket System</h3>
+	    <h3 data-i18n="trainTicketTitle">Train Ticket System</h3>
 
-            <p class="project-type">
+	    <p class="project-type" data-i18n="databaseProject">
                 Database Project
             </p>
 
-            <p>
+	    <p data-i18n="trainTicketDescription">
                 Designed and implemented relational and graph database structures for a train-ticket system.
             </p>
 
             <p>
-                <strong style="color: #000000;">Tools &amp; methods:</strong><br>
-                MariaDB · Neo4j · Database Schema Design
+		<strong style="color: #000000;" data-i18n="toolsMethods">Tools &amp; methods:</strong><br>
+		<span data-i18n="trainTicketTools">MariaDB · Neo4j · Database Schema Design</span>
             </p>
 
             <a href="https://github.com/LisaHollaus/TRAITS-TRAInTicketingSystem" target="_blank" rel="noopener">
-                View source code on GitHub &rarr;
+		<span data-i18n="viewGithub">View source code on GitHub &rarr;</span>
             </a>
 
         </div>
@@ -641,22 +645,22 @@
     <div class="col-six tab-full">
         <div class="project-card">
 
-            <h3>Manual vs AI-Simulated Usability Testing</h3>
+	    <h3 data-i18n="usabilityTitle">Manual vs AI-Simulated Usability Testing</h3>
 
-            <p class="project-type">
+	    <p class="project-type" data-i18n="bachelorThesis">
                 Bachelor Thesis
             </p>
 
-            <p>
+	    <p data-i18n="usabilityDescription">
                 Compared traditional and AI-simulated usability testing in a real-world scenario.
             </p>
 
             <p>
-                <strong style="color: #000000;">Tools &amp; methods:</strong><br>
-                UX Research · OpenAI's ChatGPT Agent model · Usability Testing
+		<strong style="color: #000000;" data-i18n="toolsMethods">Tools &amp; methods:</strong><br>
+		<span data-i18n="usabilityTools">UX Research · OpenAI's ChatGPT Agent model · Usability Testing</span>
             </p>
 
-            <a href="docs/bachelor-thesis_Hollaus.pdf" download>Download bachelor thesis (PDF) &rarr;</a>
+	    <a href="docs/bachelor-thesis_Hollaus.pdf" download data-i18n="downloadThesis">Download bachelor thesis (PDF) &rarr;</a>
 
         </div>
     </div>
@@ -664,24 +668,24 @@
 	<div class="col-six tab-full">
     <div class="project-card">
 
-        <h3>PDF File Merger</h3>
+	<h3 data-i18n="pdfMergerTitle">PDF File Merger</h3>
 
-        <p class="project-type">
+	<p class="project-type" data-i18n="hobbyAutomation">
             Hobby Automation Project
         </p>
 
-        <p>
+	<p data-i18n="pdfMergerDescription">
             Built a lightweight Python app that merges PDFs in each folder into a single document, helping me organize study materials.
         </p>
 
         <p>
-            <strong style="color: #000000;">Tools &amp; methods:</strong><br>
-            Python · PyPDF2 · File Handling
+	    <strong style="color: #000000;" data-i18n="toolsMethods">Tools &amp; methods:</strong><br>
+	    <span data-i18n="pdfMergerTools">Python · PyPDF2 · File Handling</span>
         </p>
 
         <p>
             <a href="https://github.com/LisaHollaus/Pdf-file-merger" target="_blank" rel="noopener">
-                View source code on GitHub &rarr;
+		<span data-i18n="viewGithub">View source code on GitHub &rarr;</span>
             </a>
         </p>
 
@@ -693,40 +697,40 @@
     <!-- Enlarged portfolio images -->
     <div id="modal-gsva" class="popup-modal project-popup mfp-hide">
         <div class="media">
-            <img src="images/portfolio/gsva_heatmap.png" alt="Gene Set Variation Analysis" />
+	    <img src="images/portfolio/gsva_heatmap.png" alt="Gene Set Variation Analysis" data-i18n-alt="gsvaImageAlt" />
         </div>
         <div class="description-box">
-            <h4>Gene Set Variation Analysis</h4>
-            <div class="categories">Bioinformatics Project</div>
+	    <h4 data-i18n="gsvaTitle">Gene Set Variation Analysis</h4>
+	    <div class="categories" data-i18n="bioinformaticsProject">Bioinformatics Project</div>
         </div>
         <div class="link-box">
-            <a href="#" class="popup-modal-dismiss">Close</a>
+	    <a href="#" class="popup-modal-dismiss" data-i18n="close">Close</a>
         </div>
     </div>
 
     <div id="modal-ecg" class="popup-modal project-popup mfp-hide">
         <div class="media">
-            <img src="images/portfolio/big_data_barplot_k3.png" alt="ECG Clustering Results" />
+	    <img src="images/portfolio/big_data_barplot_k3.png" alt="ECG Clustering Results" data-i18n-alt="ecgImageAlt" />
         </div>
         <div class="description-box">
-            <h4>ECG Arrhythmia Exploratory Data Analysis</h4>
-            <div class="categories">Big Data Project</div>
+	    <h4 data-i18n="ecgTitle">ECG Arrhythmia Exploratory Data Analysis</h4>
+	    <div class="categories" data-i18n="bigDataProject">Big Data Project</div>
         </div>
         <div class="link-box">
-            <a href="#" class="popup-modal-dismiss">Close</a>
+	    <a href="#" class="popup-modal-dismiss" data-i18n="close">Close</a>
         </div>
     </div>
 
     <div id="modal-flood" class="popup-modal project-popup mfp-hide">
         <div class="media">
-            <img src="images/portfolio/flood-platform.png" alt="Flood Information Platform" />
+	    <img src="images/portfolio/flood-platform.png" alt="Flood Information Platform" data-i18n-alt="floodImageAlt" />
         </div>
         <div class="description-box">
-            <h4>Flood Information Platform</h4>
-            <div class="categories">Scrum Web Development Project</div>
+	    <h4 data-i18n="floodTitle">Flood Information Platform</h4>
+	    <div class="categories" data-i18n="scrumWebProject">Scrum Web Development Project</div>
         </div>
         <div class="link-box">
-            <a href="#" class="popup-modal-dismiss">Close</a>
+	    <a href="#" class="popup-modal-dismiss" data-i18n="close">Close</a>
         </div>
     </div>
 
@@ -741,8 +745,8 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-            <h1>Let's talk about a role or project.</h1>
-			<p class="lead">I'm seeking development or data science roles and am open to freelance or part-time contract work.</p>
+	    <h1 data-i18n="contactHeading">Let's talk about a role or project.</h1>
+			<p class="lead" data-i18n="contactLead">I'm seeking development or data science roles and am open to freelance or part-time contract work.</p>
 		
 		</div> 
    		</div> <!-- /section-intro -->
@@ -753,13 +757,13 @@
 
 		
    	<div class="row contact-info">
-   			<a class="contact-email-link" href="mailto:lisa.hollaus@live.at" aria-label="Email Lisa-Maria Hollaus">
+			<a class="contact-email-link" href="mailto:lisa.hollaus@live.at" aria-label="Email Lisa-Maria Hollaus" data-i18n-aria-label="emailLisa">
    				<div class="icon">
    					<i class="icon-mail"></i>
    				</div>
 
    				<div class="contact-details">
-                    <h2>Email Lisa-Maria</h2>
+		    <h2 data-i18n="emailLisaHeading">Email me</h2>
    					<p>lisa.hollaus@live.at</p>
    				</div>
    			</a>
@@ -788,14 +792,14 @@
       	<div class="col-six tab-full">
 	       	<div class="copyright">
 		        	<span>© 2026 <a href="#about">Lisa-Maria Hollaus</a></span>
-		        	<span>Template by <a href="http://www.styleshout.com/" target="_blank" rel="noopener">Styleshout</a>, distributed by <a href="https://themewagon.com/" target="_blank" rel="noopener">ThemeWagon</a></span>
-					<span><a href="impressum.html">Legal Notice | Impressum</a></span>
-               		<span><a href="datenschutz.html">Privacy Policy | Datenschutz</a></span>
+				<span data-i18n="footerAttribution" data-i18n-html>Template by <a href="http://www.styleshout.com/" target="_blank" rel="noopener">Styleshout</a>, distributed by <a href="https://themewagon.com/" target="_blank" rel="noopener">ThemeWagon</a></span>
+			<span><a href="impressum.html" data-i18n="legalNotice">Legal Notice | Impressum</a></span>
+			<span><a href="datenschutz.html" data-i18n="privacyPolicy">Privacy Policy | Datenschutz</a></span>
 				</div>		                  
 	      	</div>
 
 	      	<div id="go-top">
-		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+			 <a class="smoothscroll" title="Back to Top" data-i18n-title="backToTop" href="#top"><i class="fa fa-long-arrow-up"></i></a>
 		      </div>
 
       	</div> <!-- /row -->     	
@@ -810,6 +814,7 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script src="js/language-toggle.js"></script>
 
 </body>
 

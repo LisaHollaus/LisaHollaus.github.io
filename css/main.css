@@ -1135,6 +1135,41 @@ header .top-bar {
     align-items: center;
 }
 
+header .language-toggle {
+	display: none;
+	position: fixed;
+	top: 1.1rem;
+	right: 1.6rem;
+	z-index: 1001;
+	min-width: 4.4rem;
+	height: 4.4rem;
+	padding: 0 1.2rem;
+	border: 1px solid #FF0077;
+	border-radius: 2px;
+	background: #FF0077;
+	color: #151515;
+	font-family: "poppins-bold", sans-serif;
+	font-size: 1.2rem;
+	line-height: 1;
+	letter-spacing: .08rem;
+	cursor: pointer;
+	transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+header .language-toggle.is-ready {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header .language-toggle:hover {
+	border-color: #FFFFFF;
+	background: #FFFFFF;
+	color: #151515;
+}
+header .language-toggle:focus-visible {
+	outline: 3px solid #FFFFFF;
+	outline-offset: 3px;
+}
+
 header .logo {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -1593,6 +1628,9 @@ header .logo a {
 }
 .button-section .button {
 	width: 250px;
+}
+.button-section .cv-download-button .fa-download {
+	margin-right: .8rem;
 }
 .button-section [class*="col-"] .button:first-child {
 	margin-right: 4rem;

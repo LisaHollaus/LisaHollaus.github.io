@@ -26,32 +26,6 @@ body.impressum-page {
    display: inline-block;
 }
 
-.impressum-page .language-toggle {
-   display: inline-flex;
-}
-
-.impressum-page .language-button {
-   border: 0;
-   background: #ffffff;
-   color: #313131;
-   font-family: "poppins-bold", sans-serif;
-   font-size: 1.2rem;
-   line-height: 1;
-   letter-spacing: .08rem;
-   padding: 1.2rem 1.4rem;
-   text-transform: uppercase;
-   cursor: pointer;
-}
-
-.impressum-page .language-button:last-child {
-   border-right: 0;
-}
-
-.impressum-page .language-button.active {
-   background: #313131;
-   color: #ffffff;
-}
-
 .impressum-page .impressum-content h1 {
    margin-bottom: 3rem;
 }

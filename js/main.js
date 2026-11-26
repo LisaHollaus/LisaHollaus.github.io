@@ -63,6 +63,14 @@
    var toggleButton = $('.menu-toggle'),
        nav = $('.main-navigation');
 
+   function getNavigationLabel(expanded) {
+		if (document.documentElement.lang === 'de') {
+			return expanded ? 'Navigation schließen' : 'Navigation öffnen';
+		}
+
+		return expanded ? 'Close navigation' : 'Open navigation';
+	}
+
    // toggle button
    toggleButton.on('click', function(e) {
 
@@ -70,16 +78,20 @@
 		var expanded = !toggleButton.hasClass('is-clicked');
 		toggleButton.toggleClass('is-clicked');
 		toggleButton.attr('aria-expanded', expanded ? 'true' : 'false');
-		toggleButton.attr('aria-label', expanded ? 'Close navigation' : 'Open navigation');
+		toggleButton.attr('aria-label', getNavigationLabel(expanded));
 		nav.stop(true, true).slideToggle();
 
+	});
+
+	document.addEventListener('portfolioLanguageChanged', function() {
+		toggleButton.attr('aria-label', getNavigationLabel(toggleButton.hasClass('is-clicked')));
 	});
 
 	$(document).on('keydown', function(e) {
 		if (e.key === 'Escape' && toggleButton.hasClass('is-clicked')) {
 			toggleButton.removeClass('is-clicked');
 			toggleButton.attr('aria-expanded', 'false');
-			toggleButton.attr('aria-label', 'Open navigation');
+			toggleButton.attr('aria-label', getNavigationLabel(false));
 			nav.stop(true, true).slideUp();
 			toggleButton.trigger('focus');
 		}
@@ -91,7 +103,7 @@
    	// update the toggle button
    	toggleButton.removeClass('is-clicked');
    	toggleButton.attr('aria-expanded', 'false');
-   	toggleButton.attr('aria-label', 'Open navigation');
+	toggleButton.attr('aria-label', getNavigationLabel(false));
    	// fadeout the navigation panel
    	nav.fadeOut();   		
    	     
@@ -221,10 +233,22 @@
 		var extra = document.getElementById('work-experience-extra');
 		if (!resume || !toggle || !extra) return;
 
+		function getExperienceToggleLabel(expanded) {
+			if (document.documentElement.lang === 'de') {
+				return expanded ? 'Weniger Berufserfahrung anzeigen' : 'Weitere Berufserfahrung anzeigen';
+			}
+
+			return expanded ? 'Show less experience' : 'Show more experience';
+		}
+
 		toggle.addEventListener('click', function() {
 			var expanded = resume.classList.toggle('work-experience-expanded');
 			toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-			toggle.setAttribute('aria-label', expanded ? 'Show less experience' : 'Show more experience');
+			toggle.setAttribute('aria-label', getExperienceToggleLabel(expanded));
+		});
+
+		document.addEventListener('portfolioLanguageChanged', function() {
+			toggle.setAttribute('aria-label', getExperienceToggleLabel(toggle.getAttribute('aria-expanded') === 'true'));
 		});
 	}
 
